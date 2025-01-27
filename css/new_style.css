@@ -220,6 +220,11 @@ section{
 @media screen and (min-width: 768px) {
     .nav_bar_contacts_link {
        padding: 0px;
+       font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #434455;
     }
   }
 
@@ -243,7 +248,7 @@ section{
 }
 .banner{
     background-color: #2E2F42;
-    padding: 72px 52px;
+    padding: 72px 0px;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -394,8 +399,14 @@ section{
     text-align: center;
     color: #2e2f42;
 }
+@media screen and (min-width: 768px) {
+    .technology_list h3 {
+        text-align: start;
+    }
+  }
   @media screen and (min-width: 1200px) {
     .technology_list h3 {
+        text-align: start;
         font-weight: 500;
         font-size: 20px;
     }
@@ -450,6 +461,8 @@ section{
   }
 .team_list_card img{
     width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 .card_info{
     padding: 32px 0;
@@ -608,17 +621,27 @@ width: 100%;
     .footer_info {
         flex-direction: row;
     }
+    .footer_info_no_form {
+        margin-bottom: 0px;
+    }
   }
 @media screen and (min-width: 768px) {
     .footer_info_no_form {
         display: flex;
         flex-direction: row;
         gap: 24px;
-        margin: 0 auto;
         margin-bottom: 72px;
     }
+    .footer_info{
+        align-items: center;
+    }
   }
-
+  @media screen and (min-width: 1200px) {
+    .wrapper {
+        display: flex;
+        gap: 80px;
+    }
+  }
 .footer_logo{
     margin: 0 auto;
 }
@@ -654,6 +677,7 @@ width: 100%;
 @media screen and (min-width: 768px) {
     .footer_txt {
         margin-bottom: 0px;
+        text-align: start;
     }
   }
 @media screen and (min-width: 1200px) {
@@ -704,6 +728,11 @@ width: 100%;
 .form{
     margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+    .form {
+        margin: 0px;
+    }
+  }
 @media screen and (min-width: 1200px) {
     .form {
         margin-left: auto;
@@ -736,6 +765,7 @@ width: 100%;
     .form_area {
         flex-direction: row;
         gap: 24px;
+        justify-content: start;
 
     }
   }
@@ -1033,6 +1063,7 @@ width: 100%;
     inset: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 72px 16px 40px;
     background-color: #ffff;
     transform: translateX(100%);
@@ -1048,7 +1079,7 @@ width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1); 
   } */
   .menu-list {
-    margin-bottom: 168px;
+    /* margin-bottom: 168px; */
   } 
   
   .menu-list-item:not(:last-child) {

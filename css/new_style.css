@@ -163,7 +163,7 @@ section{
 }
 @media screen and (min-width: 768px) {
     .nav_bar_link_first::after {
-        bottom: -10px;
+        bottom: -1px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -224,6 +224,15 @@ section{
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
+        color: #434455;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .nav_bar_contacts_link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         color: #434455;
     }
   }
